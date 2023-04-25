@@ -1,0 +1,198 @@
+:root {
+--headers-color: #2E2F42;
+--primary-color: #434455;
+--secondary-color: #4D5AE5;
+--primary-body-color: #FFFFFF;
+--secondary-body-color: #F4F4FD;
+}
+
+body {
+font-family: Roboto, sans-serif;
+color: var(--primary-color);
+background-color: #FFFFFF;
+}
+
+button {cursor: pointer;
+}
+
+button:hover, button:focus {background-color: #404BBF;
+color: #FFFFFF;}
+
+h1, h2, h3 {color: var(--headers-color);
+}
+
+/* cкинути стилі для всіх посилань та списків */
+a {
+    text-decoration: none;
+
+}
+ul {
+  list-style: none;
+}
+
+/* header */
+header {
+    background-color: var(--primary-body-color);
+}
+
+nav {
+    color: var(--headers-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;    
+    letter-spacing: 0.02em;
+}
+ul {list-style: none;}
+.logo {
+    text-transform: uppercase;
+    font-family: Raleway, sans-serif;
+    color: var(--secondary-color);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.web-one {color: var(--headers-color);}
+/* как задать цвет селектору в ул, а не каждому отедльному ли?!!!!*/
+
+.nav-link {
+    text-decoration:none;
+    color: var(--headers-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.web {
+    color: var(--secondary-color);
+}
+
+address {
+    font: inherit;
+}
+
+.add-info {color: var(--primary-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.add-info:hover, .add-info:focus, .nav-link:hover, .nav-link:focus {
+    color: #404BBF;
+}
+
+
+
+/* footer */
+
+.footer {background-color: var(--headers-color) ;}
+.web-two {color: var(--secondary-body-color);}
+.footer-text {color: var(--secondary-body-color);
+    width: 264px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+/* portfolio page */
+
+.paragraf {
+    color: var(--primary-color);
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
+.btn-portf { 
+    font-family: Roboto, sans-serif;
+color: var(--secondary-color);
+background-color: #F4F4FD;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+}
+
+/*main page*/
+
+.team {background-color: var(--secondary-body-color);}
+
+.team-item {background-color: #FFFFFF;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;}
+
+.features-text {
+    width: 264px;
+    height: 72px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em; 
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.hero-btn {background-color: var(--secondary-color);
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    }
+    
+    .hero {background-color: var(--headers-color);
+        text-align: center;
+    }
+    
+    .hero-title {
+        text-align: center;
+        color: #FFFFFF;
+        width: 496px;
+        height: 120px;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+    }
+
+    .features-tital { visibility: hidden;}
+
+    .features-sub-title {font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    }
+
+    .title {font-size: 36px;
+    line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--headers-color);
+}
+
+.team-role {font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.titel-works {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--headers-color);
+}
+
+.team-name {font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;}
