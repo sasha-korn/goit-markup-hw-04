@@ -105,19 +105,16 @@ address {
     letter-spacing: 0.02em;
     line-height: 1.5;
 }
-
-.portfolio-btn-item { 
+.portfolio-btn {
+    background-color: var(--secondary-body-color);
     font-family: Roboto, sans-serif;
 color: var(--secondary-color);
-background-color: #F4F4FD;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-display: flex;
-align-items: center;
-text-align: center;
 letter-spacing: 0.04em;
 }
+
 
 /*main page*/
 
