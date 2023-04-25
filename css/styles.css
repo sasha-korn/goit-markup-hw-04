@@ -99,14 +99,14 @@ address {
 
 /* portfolio page */
 
-.paragraf {
+.portfolio-card-text {
     color: var(--primary-color);
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
 }
 
-.btn-portf { 
+.portfolio-btn-item { 
     font-family: Roboto, sans-serif;
 color: var(--secondary-color);
 background-color: #F4F4FD;
@@ -184,7 +184,7 @@ color: var(--headers-color);
     letter-spacing: 0.02em;
 }
 
-.titel-works {
+.portfolio-card-tital {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -196,3 +196,7 @@ color: var(--headers-color);
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;}
+
+.portfolio-tital {
+    display: none;
+}
