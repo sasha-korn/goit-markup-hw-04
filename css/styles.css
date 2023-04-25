@@ -19,16 +19,21 @@ button:hover, button:focus {background-color: #404BBF;
 color: #FFFFFF;}
 
 h1, h2, h3 {color: var(--headers-color);
+    margin: 0px;
+    padding: 0px;
 }
 
 /* cкинути стилі для всіх посилань та списків */
 a {
     text-decoration: none;
+    margin: 0px;
 
 }
 ul {
   list-style: none;
 }
+
+li, ul {margin: 0px;}
 
 /* header */
 header {
@@ -42,7 +47,15 @@ nav {
     line-height: 1.5;    
     letter-spacing: 0.02em;
 }
-ul {list-style: none;}
+
+ul {
+    list-style: none;
+}
+
+li, a {margin: 0;
+padding: 0;
+}
+
 .logo {
     text-transform: uppercase;
     font-family: Raleway, sans-serif;
@@ -51,6 +64,7 @@ ul {list-style: none;}
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-right: 76px;
 }
 
 .web-one {color: var(--headers-color);}
@@ -144,23 +158,38 @@ letter-spacing: 0.02em;}
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    min-width: 169px;
+    border-radius: 4px;
+    padding: 16px 32px 16px 32px;
+    margin-top: 48px;
+    
     }
     
-    .hero {background-color: var(--headers-color);
+    .hero {
+        background-color: var(--headers-color);
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+       padding-bottom: 188px;
+       padding-top: 188px;
     }
     
-    .hero-title {
+    /* .hero-conteiner {
+        text-align: center; */
+    /* } */
+
+.hero-title {
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
         color: #FFFFFF;
         width: 496px;
-        height: 120px;
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
     }
 
-    .features-tital { visibility: hidden;}
+    .features-title { visibility: hidden;}
 
     .features-sub-title {font-weight: 500;
     font-size: 20px;
@@ -170,7 +199,7 @@ letter-spacing: 0.02em;}
 
     .title {font-size: 36px;
     line-height: 1.11;
-text-align: center;
+    text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--headers-color);
@@ -196,4 +225,39 @@ letter-spacing: 0.02em;}
 
 .portfolio-tital {
     display: none;
+}
+
+.container {
+    display: flex;
+}
+
+.container.header {
+
+    justify-content: space-between;
+    padding-left: 156px;
+    padding-right: 156px;
+    padding-top:24px;
+    padding-bottom:24px;
+    align-items: center;
+
+}
+
+.add-container {
+    display: flex;
+    /* align-items: center; */
+}
+
+.nav-container {
+    display: flex;
+    /* align-items: center; */
+}
+
+
+.nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+/* .nav.conteinter {    align-items: center;} */
+
+.tel {
+    margin-left: 40px;
 }
