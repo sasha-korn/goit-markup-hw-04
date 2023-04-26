@@ -4,6 +4,7 @@
 --secondary-color: #4D5AE5;
 --primary-body-color: #FFFFFF;
 --secondary-body-color: #F4F4FD;
+--border-color: #E7E9FC; 
 }
 
 body {
@@ -12,9 +13,11 @@ color: var(--primary-color);
 background-color: #FFFFFF;
 }
 
+/* cкинути стилі для всіх посилань та списків */
+
 button {cursor: pointer;
 }
-
+ul {padding: 0;}
 button:hover, button:focus {background-color: #404BBF;
 color: #FFFFFF;}
 
@@ -23,37 +26,56 @@ h1, h2, h3 {color: var(--headers-color);
     padding: 0px;
 }
 
-/* cкинути стилі для всіх посилань та списків */
-a {
-    text-decoration: none;
-    margin: 0px;
-
-}
 ul {
-  list-style: none;
-}
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   }
+   a {
+    color: inherit;
+    text-decoration: none;
+   }
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p {
+    margin: 0;
+   }
+   img {
+    display: block;
+   }
+   button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font: inherit;
+    cursor: pointer;
+   }
+   address {
+    font-style: normal;
+   }
+   
 
-li, ul {margin: 0px;}
+
 
 /* header */
 header {
     background-color: var(--primary-body-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
-nav {
-    color: var(--headers-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;    
-    letter-spacing: 0.02em;
-}
 
-ul {
-    list-style: none;
-}
 
 li, a {margin: 0;
 padding: 0;
+}
+
+.container {width: 1128px;
+margin: 0 auto;
+padding: 0 15px;
 }
 
 .logo {
@@ -65,6 +87,8 @@ padding: 0;
     line-height: 1.17;
     letter-spacing: 0.03em;
     margin-right: 76px;
+    padding-top:24px;
+    padding-bottom:24px;
 }
 
 .web-one {color: var(--headers-color);}
@@ -101,13 +125,12 @@ address {
 
 /* footer */
 
-.footer {background-color: var(--headers-color) ;}
-.web-two {color: var(--secondary-body-color);}
+
 .footer-text {color: var(--secondary-body-color);
     width: 264px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
@@ -118,6 +141,8 @@ address {
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
+    font-weight: 400;
+
 }
 .portfolio-btn {
     background-color: var(--secondary-body-color);
@@ -127,6 +152,9 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
+padding: 12px 24px;
+border: 1px solid var(--border-color);
+border-radius: 4px;
 }
 
 
@@ -149,6 +177,7 @@ letter-spacing: 0.02em;}
     flex: none;
     order: 1;
     flex-grow: 0;
+    font-weight: 400;
 }
 
 .hero-btn {background-color: var(--secondary-color);
@@ -160,8 +189,9 @@ letter-spacing: 0.02em;}
     letter-spacing: 0.04em;
     min-width: 169px;
     border-radius: 4px;
-    padding: 16px 32px 16px 32px;
+    padding: 16px 32px;
     margin-top: 48px;
+
     
     }
     
@@ -170,13 +200,10 @@ letter-spacing: 0.02em;}
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-       padding-bottom: 188px;
-       padding-top: 188px;
+       padding: 188px 0;
     }
     
-    /* .hero-conteiner {
-        text-align: center; */
-    /* } */
+
 
 .hero-title {
         margin-left: auto;
@@ -197,17 +224,19 @@ letter-spacing: 0.02em;}
     letter-spacing: 0.02em;
     }
 
-    .title {font-size: 36px;
+    .work-title, .team-title {font-size: 36px;
     line-height: 1.11;
     text-align: center;
-letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--headers-color);
+margin-bottom: 72px;
 }
 
 .team-role {font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-weight: 400;
 }
 
 .portfolio-card-tital {
@@ -216,6 +245,7 @@ color: var(--headers-color);
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--headers-color);
+    margin-bottom: 8px;
 }
 
 .team-name {font-weight: 500;
@@ -227,31 +257,22 @@ letter-spacing: 0.02em;}
     display: none;
 }
 
-.container {
-    display: flex;
-}
 
 .container.header {
 
     justify-content: space-between;
-    padding-left: 156px;
-    padding-right: 156px;
-    padding-top:24px;
-    padding-bottom:24px;
     align-items: center;
 
 }
 
-.add-container {
+ .nav, .header, .add-container, .team-list, .features-list, .work-list, .nav-container, .portfolio-btn-list, .portfolio-card-list {
     display: flex;
-    /* align-items: center; */
+
 }
 
-.nav-container {
-    display: flex;
-    /* align-items: center; */
-}
 
+
+.nav-link, .add-info {padding: 24px 0;}
 
 .nav-item:not(:last-child) {
     margin-right: 40px;
@@ -261,3 +282,88 @@ letter-spacing: 0.02em;}
 .tel {
     margin-left: 40px;
 }
+
+.nav {
+    align-items: center;
+}
+
+
+.add-item {
+    padding: 0px;
+}
+
+.features-list, .work-list, .team-list {
+gap: 24px;}
+
+.features, .team {
+    padding: 120px 0;
+}
+
+.features-sub-title {margin-bottom: 8px;}
+
+.work {padding-bottom: 120px;}
+
+.team-item {box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;}
+
+    .team-member {
+        margin: 32px 16px;
+    text-align: center;
+
+    }
+
+    .team-name {margin-bottom: 8px;}
+
+    .footer {
+        background-color: var(--headers-color) ;
+        padding: 100px 0;
+    }
+    .web-two {color: var(--secondary-body-color);}
+
+
+    .logo-footer {
+        display: block;
+        padding: 0;
+        margin-bottom: 16px;}
+
+
+        /* Portfolio page */
+
+        .portfolio {padding-top: 96px;
+        padding-bottom: 120px;}
+
+       .portfolio-btn-list {
+        justify-content: space-between;
+       }
+
+       .container-btn 
+       {width: 586px; 
+    margin-bottom: 72px;}
+
+       .container-cards {
+        padding: 0 0;
+       }
+
+       .portfolio-card-list 
+       {flex-wrap: wrap;}
+
+       .portfolio-card-item {margin-right: 24px;
+        margin-bottom: 48px;
+    ;
+}
+     
+       .portfolio-card-item:nth-child(3n) {margin-right:0;
+      }
+      .portfolio-card-item:nth-last-child(-n+3) {margin-bottom:0;
+      }
+
+      .card-info {
+        border: 1px solid var(--border-color);
+        border-top: none;
+    padding: 32px 0px;
+    padding-left: 16px;
+}
+
+.portfolio-btn:hover, .portfolio-btn:focus {
+    border: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);}
