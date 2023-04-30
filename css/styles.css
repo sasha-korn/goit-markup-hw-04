@@ -84,7 +84,12 @@ body {
 .work-list,
 .nav-container,
 .portfolio-btn-list,
-.portfolio-card-list, .footer-block, .social-list, .customers-list, .icon-block {
+.portfolio-card-list, 
+.footer-block, 
+.social-list, 
+.customers-list, 
+.icon-block, 
+.customers-link-block {
   display: flex;
 }
 
@@ -400,13 +405,8 @@ border-radius: 4px;
 
 .team-member .social-list {
   gap: 24px;
-
-  margin-left: 16px;
-  margin-right: 16px;
+  justify-content: center;
 }
-
-/* .social-list {padding-left: 16px;} */
-
 /* section customers */
 .customers {
   padding-top: 120px;
@@ -418,17 +418,14 @@ border-radius: 4px;
 color: var(--icon-customers);
 border: 1px solid var(--icon-customers);
 border-radius: 4px;
-padding: 16px 32px;
 width: 168px;
 height: 88px;
-display: block;
 
-/* display: flex;
 justify-content: center;
-align-items: center; */
+align-items: center;
 }
 
-.customers-link-block:hover {
+.customers-link-block:hover, .customers-link-block:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
