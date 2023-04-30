@@ -6,6 +6,8 @@
   --secondary-body-color: #f4f4fd;
   --border-color: #e7e9fc;
   --accent-color: #404bbf;
+  --active-color: #31D0AA;
+  --icon-customers: #8E8F99;
 }
 
 /* RESET (cкинути дефолтні стилі для елементів) */
@@ -82,7 +84,7 @@ body {
 .work-list,
 .nav-container,
 .portfolio-btn-list,
-.portfolio-card-list {
+.portfolio-card-list, .footer-block, .social-list, .customers-list, .icon-block {
   display: flex;
 }
 
@@ -188,6 +190,27 @@ footer .logo {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+} 
+
+footer .social-list {
+  gap: 16px;
+}
+
+.footer-block-2 {margin-left: 120px;
+}
+
+.footer-social-text {
+color: var(--primary-body-color);
+font-size: 16px;
+line-height: 1.5;
+Letter-spacing: 2%;
+Font style: Medium;
+
+margin-bottom: 16px;
+}
+
+footer .icon-block:hover {
+  background-color: var(--active-color);
 }
 
 /* HOME PAGE */
@@ -214,6 +237,12 @@ footer .logo {
 .hero {
   background-color: var(--headers-color);
   text-align: center;
+
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(/images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
 
   margin-left: auto;
   margin-right: auto;
@@ -254,10 +283,20 @@ footer .logo {
   letter-spacing: 0.02em;
 }
 
+.features-icon-block {padding: 24px 102.14px;
+background-color: var(--secondary-body-color);
+margin-bottom: 8px;
+}
+
+.features-icon {
+  fill: #2a2a2a;
+}
+
 /* section what we are doin (our work) */
 
 .work-title,
-.team-title {
+.team-title,
+.customers-title {
   text-transform: capitalize;
   color: var(--headers-color);
   font-size: 36px;
@@ -279,7 +318,7 @@ footer .logo {
 }
 
 .team-item {
-  background-color: var(--secondary-body-color);
+  background-color: var(--primary-body-color);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -291,6 +330,8 @@ footer .logo {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 400;
+
+  margin-bottom: 8px;
 }
 
 .team-name {
@@ -326,6 +367,64 @@ footer .logo {
 .team-name {
   margin-bottom: 8px;
 }
+
+.icon-block {
+  background-color: var(--secondary-color);
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.team .icon-block:hover {
+  background-color: var(--accent-color);
+}
+
+.icon {
+  fill: var(--secondary-body-color);
+}
+
+.team-member .social-list {
+  gap: 24px;
+}
+
+/* section customers */
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-title {margin-bottom: 72px;}
+
+.customers-link-block {
+color: var(--icon-customers);
+border: 1px solid var(--icon-customers);
+border-radius: 4px;
+padding: 16px 32px;
+width: 168px;
+height: 88px;
+display: block;
+
+/* display: flex;
+justify-content: center;
+align-items: center; */
+}
+
+.customers-link-block:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.customers-list {
+  gap: 24px;
+}
+
+.customers-icon {
+  fill: currentColor;
+}
+
 
 /* PORTFOLIO PAGE */
 
@@ -391,6 +490,12 @@ footer .logo {
 .portfolio-card-item {
   margin-right: 24px;
   margin-bottom: 48px;
+}
+
+.portfolio-card-item:hover, .portfolio-card-item:focus {
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+0px 1px 1px rgba(46, 47, 66, 0.16),
+0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-card-item:nth-child(3n) {
