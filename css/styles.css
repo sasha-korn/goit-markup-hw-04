@@ -238,7 +238,7 @@ footer .icon-block:hover {
   background-color: var(--headers-color);
   text-align: center;
 
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(./images/hero-bg.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
